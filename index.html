@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Beneficios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculadora de Beneficios</h2>
+        <div class="input-group">
+            <label for="cajaActual">Caja Actual:</label>
+            <input type="number" id="cajaActual" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="cajaAnterior">Caja Anterior:</label>
+            <input type="number" id="cajaAnterior" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="gastosSemana">Gastos de la Semana:</label>
+            <input type="number" id="gastosSemana" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="ingresosSemana">Ingresos de la Semana:</label>
+            <input type="number" id="ingresosSemana" step="0.01">
+        </div>
+        <button onclick="calcularBeneficios()">Calcular</button>
+        <div id="resultado" class="resultado">
+            <!-- Aquí se mostrarán los resultados -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
